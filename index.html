@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- Bootsrtap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+  <!-- Map -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <!-- Title -->
+  <title>Web-Dev++</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top" id="main-nav">
+    <div class="container">
+      <a href="#" class="navbar-brand">Web Dev++</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Goto Top</a>
+          </li>
+          <li class="nav-item">
+            <a href="#types" class="nav-link">Types</a>
+          </li>
+          <li class="nav-item">
+            <a href="#learn" class="nav-link">Learn</a>
+          </li>
+          <li class="nav-item">
+            <a href="#faqs" class="nav-link">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#team" class="nav-link">Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Showcase -->
+  <section class="bg-dark text-light p-3 pb-xl-0 text-center text-md-start">
+    <div class="container">
+      <div class="d-sm-flex justify-content-between align-items-center">
+        <div class="">
+          <h1>Become a <span class="text-warning">Web Developer</span></h1>
+          <p class="lead my-4">
+            Get the understanding and in-depth knowledge of HTML, CSS, Javascript, CSS frameworks such as Bootstrap, Jquery, Web Design Fundamentals, PHP, Django and many more. Start your journey to become a full stack web developer. Create beautiful
+            and functional websites using the most advanced tools in the market. Start your journey today.
+          </p>
+          <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#enroll"> Enroll Now!</button>
+        </div>
+        <img class="img-fluid w-25 d-none d-md-block" src="images/hacker.png" alt="Developer-art">
+      </div>
+    </div>
+
+    <div class="modal fade text-dark" id="enroll" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Enroll Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill this form and we will get back to you soon</p>
+            <form action="mailto:jainsahabdj07@gmail.com" method="post" enctype="text/plain">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">First Name</label>
+                <input type="text" name="first_name" class="form-control" id="first-name" placeholder="First Name">
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name</label>
+                <input type="text" name="last_name" class="form-control" id="last-name" placeholder="Last Name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email Address">
+              </div>
+              <div class="mb-3">
+                <label for="phone-number" class="col-form-label">Phone Number</label>
+                <input type="number" name="phone_number" class="form-control" id="phone-number" placeholder="Phone Number">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-primary text-light p-5">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6">
+          <h3 class="mb-3 mb-md-0">Subscribe to the Newsletter</h3>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email address">
+            <button type="button" class="btn btn-dark">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards- Types of Web Developers -->
+  <section class="bg-warning text-dark p-5" id="types">
+    <div class="container">
+      <h2 class="text-center pt-2 pb-5">Types pf Web Development</h2>
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title my-3">Front-end</h3>
+              <p class="card-text my-4"> A Front-End Developer works on the “client-side” of web development, meaning any portion of the site or app that users interact with. This can include a site’s layout, design, and the way users interact with
+                it.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-server"></i>
+              </div>
+              <h3 class="card-title my-3">Back end</h3>
+              <p class="card-text my-4">A Back-End Developer works on the “server-side” of web development. This is focused on the way a site functions and can include databases, servers, networks and hosting, and more.</p>
+              <a href="#" class="btn btn-dark">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-stack"></i>
+              </div>
+              <h3 class="card-title my-3">Full Stack</h3>
+              <p class="card-text my-4">A Full-Stack Developer is familiar with both front-and back-end development and works with both sides of a website. They are capable of working with both design and data.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn Sections: Needs to become a Web-Dev -->
+  <section class="p-5 bg-dark text-light" id="learn">
+    <div class="container">
+      <h2 class="text-center pt-2">Needs to become a Web-Dev</h2>
+      <div class="row justify-content-center align-items-center text-center text-md-start">
+        <div class="col-md-4">
+          <img class="img-fluid" src="images/front-end.png" alt="Front-end Web Developer">
+        </div>
+        <div class="col-md-8 col-lg-6 p-5">
+          <h3 class="mb-3">Front End</h3>
+          <p class="lead"><strong>Foundations: </strong>To become a Web Developer, you should develop a comprehensive understanding of how the web works. This will deepen your HTML and CSS knowledge to build and style more advanced static web pages,
+            using frameworks such as Flexbox.</p>
+          <p class="lead"><strong>Programming fundamentals: </strong>Foundational knowledge of JavaScript and object-oriented programming should be a starting point for aspiring Web Developers, as it will improve your ability to write and build
+            components.</p>
+          <p class="lead"><strong>Front-end frameworks: </strong>It’s important for aspiring Web Developers to learn how to use React, a JavaScript framework, to build complex and dynamic web pages and professional-level user interfaces.</p>
+          <a href="#" class="btn btn-light my-3">
+            <i class="bi bi-caret-right-fill"></i> Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-5 pt-0 bg-dark text-light">
+    <div class="container">
+      <div class="row justify-content-center align-items-center text-center text-md-start">
+        <div class="col-md-4 order-md-2">
+          <img class="img-fluid" src="images/back-end.png" alt="Back-end Web Developer">
+        </div>
+        <div class="col-md-8 col-lg-6 p-5 pt-md-0 order-md-1">
+          <h3 class="mb-3">Back End</h3>
+          <p class="lead"><strong>Web servers: </strong>To become a Web Developer, you’ll need to know how to build servers using a modern back-end framework and how to develop custom APIs and serve static websites and files.</p>
+          <p class="lead"><strong>Server-side programming: </strong>It’s important for Web Developers to have an understanding of Server Side Rendering and Templating Engines, which are used to create empty page templates populated with dynamic data,
+            such as a series of product pages for an eCommerce store.</p>
+          <p class="lead"><strong>Databases: </strong>Aspiring Web Developers will also have to understand core concepts around data and learn how to manage databases and data on a web server.</p>
+          <a href="#" class="btn btn-light my-3">
+            <i class="bi bi-caret-right-fill"></i> Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion- FAQs -->
+  <section class="p-5 bg-warning text-dark" id="faqs">
+    <div class="container">
+      <h2 class="text-center mt-2 mb-5">Frequently Asked Questions</h2>
+      <div class="accordion accordion-flush" id="questions">
+        <!-- Question-1 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h5>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question1">How Do You Become a Web Developer?</button>
+            </h5>
+          </div>
+          <div class="accordion-collapse collapse" id="question1">
+            <div class="accordion-body">
+              To become a Web Developer, you should have an understanding of HTML, CSS, and JavaScript. It’s also recommended to learn about CSS and CSS frameworks. Developing these fundamental web development skills will give you the foundation and
+              logic for communicating with programming languages.
+            </div>
+          </div>
+        </div>
+        <!-- question-2 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h5>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question2">Is Web Development a Growing Field?</button>
+            </h5>
+          </div>
+          <div class="accordion-collapse collapse" id="question2">
+            <div class="accordion-body">
+              Yes, the web development field is booming. There are more than 1.3 million Developer jobs available in North America, and more than 47,000 new development jobs were created in the last two years, with the market expected to grow an
+              additional 15% in the next 5 years. For these reasons, Mondo found “Web Developer” the most in-demand job title in tech and one of its top-paying jobs.
+            </div>
+          </div>
+        </div>
+        <!-- question-3 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h5>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question3">What Is the Salary of a Web Developer?</button>
+            </h5>
+          </div>
+          <div class="accordion-collapse collapse" id="question3">
+            <div class="accordion-body">
+              According to job site Indeed, the average salary for Web Developers in the United States is $71,531, with Senior Web Developers averaging $95,325. That makes web development one of the most lucrative positions that do not require a
+              degree.
+            </div>
+          </div>
+        </div>
+        <!-- question-4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h5>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question4">How Can I Become a Web Developer Fast?</button>
+            </h5>
+          </div>
+          <div class="accordion-collapse collapse" id="question4">
+            <div class="accordion-body">
+              Coding bootcamps have become an increasingly popular option for aspiring Web Developers as they provide a hands-on learning experience and the chance to develop job-ready skills – in as little as 12 weeks.
+            </div>
+          </div>
+        </div>
+        <!-- question-5 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h5>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question5">What Languages Should a New Web Developer Learn?</button>
+            </h5>
+          </div>
+          <div class="accordion-collapse collapse" id="question5">
+            <div class="accordion-body">
+              Given the “Big five” areas where growth is expected to happen—AI and machine learning, IoT, AR, and blockchain—what languages should you learn? While the answer depends, to some extent, on which of these five areas you choose to focus
+              on, the same three names came up again and again: C++, Java, and Python. Within each of the aforementioned concentrations, more languages crop up in addition to these three. In Blockchain: Ruby and Solidity. In IoT: C, JavaScript, and
+              PHP. In AI and machine learning: R, Lisp, and Prolog. And in AR: C#, JavaScript, and Swift. But in every case, C++, Java, and Python are among the leaders.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards- Our Team -->
+  <section class="p-5 bg-dark text-light" id="team">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+      <p class="lead text-center p-3">We are at a learning stage and trying to gain experiance by doing some really good projects as guided by our instructors</p>
+      <div class="row g-4">
+        <!-- Member-1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="Member- Ayush Shrivastava" class="rounded-circle mb-3">
+              <h3 class="card-title mb-3">Ayush Shrivastava</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis inventore reiciendis deserunt, accusamus, eaque quibusdam.</p>
+              <a href="#" class="mx-1"><i class="bi bi-facebook text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-instagram text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-linkedin text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-whatsapp text-dark"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Member-2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Member- Deepesh Jain" class="rounded-circle mb-3">
+              <h3 class="card-title mb-3">Deepesh Jain DJ</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis inventore reiciendis deserunt, accusamus, eaque quibusdam.</p>
+              <a href="#" class="mx-1"><i class="bi bi-facebook text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-instagram text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-linkedin text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-whatsapp text-dark"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Member-3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Member- Shruti Agarwal" class="rounded-circle mb-3">
+              <h3 class="card-title mb-3">Shruti Agarwal</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis inventore reiciendis deserunt, accusamus, eaque quibusdam.</p>
+              <a href="#" class="mx-1"><i class="bi bi-facebook text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-instagram text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-linkedin text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-whatsapp text-dark"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Memmber-4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/women/9.jpg" alt="Member- Sonam Dixit" class="rounded-circle mb-3">
+              <h3 class="card-title mb-3">Sonam Dixit</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis inventore reiciendis deserunt, accusamus, eaque quibusdam.</p>
+              <a href="#" class="mx-1"><i class="bi bi-facebook text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-instagram text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-linkedin text-dark"></i></a>
+              <a href="#" class="mx-1"><i class="bi bi-whatsapp text-dark"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Map -->
+  <section class="p-5 bg-light text-dark" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h2 class="mb-4 text-center">Contact Info</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item"><strong>Name:</strong> Web Dev++ (DJ Creations)</li>
+            <li class="list-group-item"><strong>Director:</strong> Ayush Shrivastava Sir</li>
+            <li class="list-group-item"><strong>Phone:</strong> +91 8120183005</li>
+            <li class="list-group-item"><strong>Email:</strong> jainsahabdj07@gmail.com</li>
+            <li class="list-group-item"><strong>Address:</strong> 141, Lajpatpura Ward, Near Gaur Smarak, Sagar, Madhya Pradesh, INDIA</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center bg-dark text-light">
+    <div class="container">
+      <p class="lead">Copyright <span id="year"></span> &copy; Deepesh Jain DJ</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'> </script>
+
+  <script type="text/javascript">
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGVlcGVzaGphaW5kaiIsImEiOiJja3B4dnR3d3AxYWo5MnhwOTc0eGVmZTZ4In0.B8QfNuoXA-czBCey8PKM7Q';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [78.795784, 23.855354],
+      zoom: 12,
+    });
+  </script>
+
+</body>
+
+</html>
