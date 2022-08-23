@@ -1,5 +1,7 @@
 # Static Web Development Blog
 
+It is a static website where information about web development is put up in an interactive way.
+
 > Technologies used: Bootstrap, HTML, CSS
 
 Link- [Visit Site](https://deepeshjaindj.github.io/webdev.github.io/)
